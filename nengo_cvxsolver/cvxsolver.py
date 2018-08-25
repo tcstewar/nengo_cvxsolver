@@ -14,6 +14,8 @@ class CVXBoundedSolver(nengo.solvers.Solver):
         N = A.shape[1]   # number of neurons
         D = Y.shape[1]   # number of dimensions
 
+        print(self.lower, self.upper)
+
         dec = []
         rmses = []
         for i in range(D):
